@@ -3,4 +3,7 @@
   作者:王建顺
 
   ## 安装
-  使用本框架前,请在CSS中设置box-sizing:border-box;
+  使用本框架前,请在CSS中设置
+  ```
+  *{box-sizing:border-box;}
+  ```
