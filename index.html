@@ -38,11 +38,11 @@
 </style>
 <body>
 <div id="app">
-    <g-button>设置</g-button>
-    <g-button icon="download">
+    <g-button :loading='loading1' @click="loading1=!loading1">设置</g-button>
+    <g-button :loading='loading3' icon="download" @click="loading3=!loading3">
         下载
     </g-button>
-    <g-button icon="settings" icon-position="right">
+    <g-button :loading='loading2' icon="settings" icon-position="right" @click="loading2=!loading2">
         设置
     </g-button>
 </div>
