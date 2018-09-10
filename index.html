@@ -37,9 +37,25 @@
     .box {
         margin: 20px;
     }
+
 </style>
 <body>
 <div id="app">
+    <g-row>
+        <g-col :span="5"></g-col>
+        <g-col :span="19"></g-col>
+    </g-row>
+    <g-row>
+        <g-col :span="2"></g-col>
+        <g-col :span="22"></g-col>
+
+    </g-row>
+    <g-row>
+        <g-col :span="2"></g-col>
+        <g-col :span="2"></g-col>
+        <g-col :span="4"></g-col>
+        <g-col :span="16"></g-col>
+    </g-row>
     <div class="box">
         <g-input value="hello" disabled></g-input>
         <g-input value="hello" readonly></g-input>
