@@ -41,21 +41,24 @@
 </style>
 <body>
 <div id="app">
-    <g-row>
-        <g-col :span="5"></g-col>
-        <g-col :span="19"></g-col>
-    </g-row>
-    <g-row>
-        <g-col :span="2"></g-col>
-        <g-col :span="22"></g-col>
+    <div style="border:1px solid green; ">
+        <g-row gutter='20'>
+            <g-col :span="5"></g-col>
+            <g-col :span="19" ></g-col>
+        </g-row>
+        <g-row gutter='20'>
+            <g-col :span="2"></g-col>
+            <g-col :span="22"></g-col>
 
-    </g-row>
-    <g-row>
-        <g-col :span="2"></g-col>
-        <g-col :span="2"></g-col>
-        <g-col :span="4"></g-col>
-        <g-col :span="16"></g-col>
-    </g-row>
+        </g-row>
+        <g-row gutter='20'>
+            <g-col :span="2" offset="1"></g-col>
+            <g-col :span="2" offset="1"></g-col>
+            <g-col :span="4"></g-col>
+            <g-col :span="16"></g-col>
+        </g-row>
+    </div>
+
     <div class="box">
         <g-input value="hello" disabled></g-input>
         <g-input value="hello" readonly></g-input>
