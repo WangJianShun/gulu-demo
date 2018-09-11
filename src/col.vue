@@ -1,10 +1,7 @@
 <template>
-    <div class="col" :class="[span &&`col-${span}`,offset&&`offset-${offset}`]"
-         :style="{paddingLeft:gutter/2+'px',paddingRight:gutter/2+'px'}">
-        <div style="border:1px solid green;height:100px;">
-            <slot>123</slot>
-        </div>
-
+    <div class="col" :class="colClass"
+         :style="colStyle">
+        <slot>123</slot>
     </div>
 
 </template>
@@ -24,12 +21,26 @@
             return {
                 gutter: 0
             }
+        },
+        computed: {
+
+            colClass() {
+                let {span, offset} = this
+                return [span && `col-${span}`, offset && `offset-${offset}`]
+            },
+            colStyle() {
+                return {
+                    paddingLeft: this.gutter / 2 + 'px', paddingRight: this.gutter / 2 + 'px'
+                }
+            }
         }
     }
 </script>
 <style scoped lang="scss">
     .col {
         width: 50%;
+        border: 1px solid green;
+        height: 100px;
     }
 
     $class: col-;
