@@ -41,21 +41,21 @@
 </style>
 <body>
 <div id="app">
-        <g-row gutter='20' align="left">
-            <g-col :span="5"></g-col>
-            <g-col :span="19" ></g-col>
-        </g-row>
-        <g-row gutter='40'>
-            <g-col :span="2"></g-col>
-            <g-col :span="22"></g-col>
 
-        </g-row>
-        <g-row gutter='20'>
-            <g-col :span="2" offset="1"></g-col>
-            <g-col :span="2" offset="1"></g-col>
-            <g-col :span="4"></g-col>
-            <g-col :span="16"></g-col>
-        </g-row>
+    <g-row gutter='20'>
+        <g-col :phone='{span:12}'
+               :ipad="{span:8}"
+               :narrow-pc="{span:4}"
+               :pc="{span:2}"
+               :wide-pc="{span:1}"
+        ></g-col>
+        <g-col :phone='{span:12,offset:0}'
+               :ipad="{span:16}"
+               :narrow-pc="{span:20}"
+               :pc="{span:22}"
+               :wide-pc="{span:23}"></g-col>
+    </g-row>
+
 
     <div class="box">
         <g-input value="hello" disabled></g-input>

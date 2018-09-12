@@ -6,6 +6,16 @@
 
 </template>
 <script>
+    let validator = (value) => {
+        let keys = Object.keys(value)
+        let valid = true
+        keys.forEach(key => {
+            if (!['span', 'offset'].includes(key)) {
+                valid = false
+            }
+        })
+        return valid
+    }
     export default {
         name: 'GuluCol',
         props: {
@@ -15,7 +25,26 @@
             offset: {
                 type: [Number, String]
             },
-
+            phone: {
+                type: Object,
+                validator,
+            },
+            ipad: {
+                type: Object,
+                validator,
+            },
+            narrowPc: {
+                type: Object,
+                validator,
+            },
+            pc: {
+                type: Object,
+                validator,
+            },
+            widePc: {
+                type: Object,
+                validator,
+            }
         },
         data() {
             return {
@@ -25,8 +54,17 @@
         computed: {
 
             colClass() {
-                let {span, offset} = this
-                return [span && `col-${span}`, offset && `offset-${offset}`]
+                let {span, offset, phone,ipad,narrowPc,pc,widePc} = this
+                let phoneClass = []
+
+                return [
+                    span && `col-${span}`, offset && `offset-${offset}`,
+                    ...(phone&&[`col-phone-${phone.span}`]),
+                    ...(ipad&&[`col-ipad-${ipad.span}`]),
+                    ...(narrowPc&&[`col-narrow-pc-${narrowPc.span}`]),
+                    ...(pc&&[`col-pc-${pc.span}`]),
+                    ...(widePc&&[`col-wide-pc-${widePc.span}`]),
+                ]
             },
             colStyle() {
                 return {
@@ -41,19 +79,96 @@
         width: 50%;
         border: 1px solid green;
         height: 100px;
-    }
 
-    $class: col-;
-    @for $n from 1 through 24 {
-        &.#{$class}#{$n} {
-            width: ($n/24)*100%
+        @for $n from 1 through 24 {
+            $class: col-;
+            &.#{$class}#{$n} {
+                width: ($n/24)*100%
+            }
+        }
+
+        @for $n from 1 through 24 {
+            $class: offset-;
+            &.#{$class}#{$n} {
+                margin-left: ($n/24)*100%
+            }
+        }
+
+        @media(max-width: 575px) {
+            $class: col-phone-;
+            @for $n from 1 through 24 {
+                &.#{$class}#{$n} {
+                    width: ($n/24)*100%
+                }
+            }
+
+            @for $n from 1 through 24 {
+                $class: offset-phone-;
+                &.#{$class}#{$n} {
+                    margin-left: ($n/24)*100%
+                }
+            }
+        }
+        @media(min-width: 576px) and(max-width: 768px) {
+            $class: col-ipad-;
+            @for $n from 1 through 24 {
+                &.#{$class}#{$n} {
+                    width: ($n/24)*100%
+                }
+            }
+
+            @for $n from 1 through 24 {
+                $class: offset-ipad-;
+                &.#{$class}#{$n} {
+                    margin-left: ($n/24)*100%
+                }
+            }
+        }
+        @media(min-width: 769px) and(max-width: 992px) {
+            $class: col-narrow-pc-;
+            @for $n from 1 through 24 {
+                &.#{$class}#{$n} {
+                    width: ($n/24)*100%
+                }
+            }
+
+            @for $n from 1 through 24 {
+                $class: offset-narrow-pc;
+                &.#{$class}#{$n} {
+                    margin-left: ($n/24)*100%
+                }
+            }
+        }
+        @media(min-width: 993px) and(max-width: 1200px) {
+            $class: col-pc-;
+            @for $n from 1 through 24 {
+                &.#{$class}#{$n} {
+                    width: ($n/24)*100%
+                }
+            }
+
+            @for $n from 1 through 24 {
+                $class: offset-pc;
+                &.#{$class}#{$n} {
+                    margin-left: ($n/24)*100%
+                }
+            }
+        }
+        @media(min-width: 1201px) {
+            $class: col-wide-pc-;
+            @for $n from 1 through 24 {
+                &.#{$class}#{$n} {
+                    width: ($n/24)*100%
+                }
+            }
+
+            @for $n from 1 through 24 {
+                $class: offset-wide-pc;
+                &.#{$class}#{$n} {
+                    margin-left: ($n/24)*100%
+                }
+            }
         }
     }
 
-    $class: offset-;
-    @for $n from 1 through 24 {
-        &.#{$class}#{$n} {
-            margin-left: ($n/24)*100%
-        }
-    }
 </style>
