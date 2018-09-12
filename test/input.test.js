@@ -43,7 +43,6 @@ describe('Input', () => {
                 }
             }).$mount()
             const inputElement = vm.$el.querySelector('input')
-            console.log(inputElement.outerHTML);
             expect(inputElement.readOnly).to.equal(true)
 
             vm.$destroy()
@@ -57,7 +56,6 @@ describe('Input', () => {
             const inputElement = vm.$el.querySelector('use')
             expect(inputElement.getAttribute('xlink:href')).to.equal('#i-error')
             const span = vm.$el.querySelector('.errorMessage')
-            console.log(vm.$el)
             expect(span.innerHTML).to.equal('出现错误')
             vm.$destroy()
         })
