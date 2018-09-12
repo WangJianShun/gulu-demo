@@ -57,11 +57,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2381" />
+          <entry key="HTML" value="2395" />
           <entry key="JSON" value="79" />
           <entry key="JavaScript" value="2751" />
-          <entry key="PLAIN_TEXT" value="1285" />
-          <entry key="Vue.js" value="5398" />
+          <entry key="PLAIN_TEXT" value="1292" />
+          <entry key="Vue.js" value="5762" />
           <entry key="YAML" value="178" />
         </counts>
       </usages-collector>
@@ -69,12 +69,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="28" />
-          <entry key="html" value="2382" />
+          <entry key="html" value="2396" />
           <entry key="js" value="2750" />
           <entry key="json" value="79" />
           <entry key="md" value="425" />
-          <entry key="txt" value="811" />
-          <entry key="vue" value="5419" />
+          <entry key="txt" value="818" />
+          <entry key="vue" value="5783" />
           <entry key="yml" value="178" />
         </counts>
       </usages-collector>
@@ -82,20 +82,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+            <state relative-caret-position="456">
+              <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/col.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+            <state relative-caret-position="147">
+              <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -103,7 +103,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/row.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
+            <state relative-caret-position="609">
               <caret line="44" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
@@ -185,6 +185,7 @@
       <find>radious</find>
       <find>iconPosition</find>
       <find>propsData</find>
+      <find>phone</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -210,8 +211,8 @@
         <option value="$PROJECT_DIR$/src/buttongroup.vue" />
         <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/src/row.vue" />
-        <option value="$PROJECT_DIR$/src/col.vue" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/col.vue" />
       </list>
     </option>
   </component>
@@ -232,8 +233,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="331" />
-    <option name="y" value="134" />
+    <option name="x" value="697" />
+    <option name="y" value="128" />
     <option name="width" value="1380" />
     <option name="height" value="791" />
   </component>
@@ -306,7 +307,7 @@
       <workItem from="1536465503074" duration="4009000" />
       <workItem from="1536553333843" duration="21113000" />
       <workItem from="1536628455338" duration="3664000" />
-      <workItem from="1536675711431" duration="4502000" />
+      <workItem from="1536675711431" duration="8791000" />
     </task>
     <task id="LOCAL-00001" summary="npm install vue">
       <created>1536063708019</created>
@@ -539,14 +540,21 @@
       <option name="project" value="LOCAL" />
       <updated>1536671674108</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="初步实现响应式">
+      <created>1536718803878</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1536718803878</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145727000" />
+    <option name="totallyTimeSpent" value="150016000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="591" y="157" width="1380" height="798" extended-state="0" />
+    <frame x="697" y="128" width="1380" height="791" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24515648" />
@@ -624,7 +632,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="验证iconPosition 为left或者right中的一个." />
     <MESSAGE value="将SVG代码整理到icon.vue" />
     <MESSAGE value="给icon添加class='icon'" />
     <MESSAGE value="添加菊花状态" />
@@ -649,7 +656,8 @@
     <MESSAGE value="input添加双向绑定" />
     <MESSAGE value="row和col的雏形完成" />
     <MESSAGE value="添加row的align=left/right/center属性." />
-    <option name="LAST_COMMIT_MESSAGE" value="添加row的align=left/right/center属性." />
+    <MESSAGE value="初步实现响应式" />
+    <option name="LAST_COMMIT_MESSAGE" value="初步实现响应式" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/button.js" />
@@ -788,22 +796,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/row.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
+        <state relative-caret-position="609">
           <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/col.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+        <state relative-caret-position="456">
+          <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/col.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
         </state>
       </provider>
     </entry>
