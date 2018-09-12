@@ -39,7 +39,7 @@ describe('Row', () => {
         })
 
     })
-    it('可以设置icon.', () => {
+    it('可以设置align', () => {
         const div=document.createElement('div')
         document.body.appendChild(div)
 
