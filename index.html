@@ -15,7 +15,6 @@
     }
 
     #app {
-        margin: 20px;
     }
 
     :root {
@@ -34,13 +33,23 @@
     }
 </style>
 <style>
-    .box {
-        margin: 20px;
-    }
 
-    .demo {
-        border: 1px solid #333;
-        min-height: 100px;
+    .sider {
+        width: 200px;
+        border: 1px solid;
+        background: #333;
+    }
+    .header{
+        height:100px;
+        background: #999;
+
+    }
+    .footer{
+        height:150px;
+        background: #ccc;
+    }
+    .silde-enter, .slide-leave-to {
+        margin-left:-200px !important;
     }
 </style>
 <body>
@@ -49,9 +58,9 @@
         <g-sider class="demo">sider</g-sider>
 
         <g-layout>
-            <g-header class="demo">header</g-header>
-            <g-content class="demo">content</g-content>
-            <g-footer class="demo">footer</g-footer>
+            <g-header>header</g-header>
+            <g-content>content</g-content>
+            <g-footer>footer</g-footer>
         </g-layout>
 
     </g-layout>

@@ -1,11 +1,11 @@
 <template>
-    <div class="sider">
+    <div class="content">
         <slot></slot>
     </div>
 </template>
 <style lang="scss" scoped>
 
-    .sider {
+    .content {
         flex-grow:1;
     }
 </style>
