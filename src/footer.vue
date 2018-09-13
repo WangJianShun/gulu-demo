@@ -1,9 +1,10 @@
 <template>
-    <div class="layout">
+    <div class="footer">
         <slot></slot>
     </div>
 </template>
-<style>
-    .layout {
+<style lang="scss" scoped>
+
+    .footer {
     }
 </style>
