@@ -13,7 +13,7 @@
             align: {
                 type: String,
                 validator(value) {
-                    return ['left', 'right', 'left', 'center'].includes(value)
+                    return ['left', 'right', 'left', 'center'].indexOf(value)>=0
                 }
             }
         },
