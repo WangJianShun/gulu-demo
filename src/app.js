@@ -40,17 +40,27 @@ new Vue({
 
     },
     methods: {
-        showToast() {
+        showToast1() {
+            this.showToast('top')
+        },
+        showToast2() {
+            this.showToast('middle')
+        },
+        showToast3() {
+            this.showToast('bottom')
+        },
+
+        showToast(position) {
             this.$toast('<p><strong>我是<a href="http://www.baidu.com" target="_blank">百度</a></strong></p>',
                 {
-                    enableHtml:true,
-                    position:'bottom',
-                        closeButton:{
-                            text:'知道了',
-                            callback(){
-                                console.log('用户说他知道了')
-                            }
+                    enableHtml: true,
+                    position,
+                    closeButton: {
+                        text: '知道了',
+                        callback() {
+                            console.log('用户说他知道了')
                         }
+                    }
                 })
         },
 
