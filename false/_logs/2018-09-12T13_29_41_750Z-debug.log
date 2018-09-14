@@ -1,0 +1,41 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'test',
+1 verbose cli   '--no-cache' ]
+2 info using npm@5.6.0
+3 info using node@v8.9.4
+4 verbose run-script [ 'pretest', 'test', 'posttest' ]
+5 info lifecycle gulu-0908@0.0.3~pretest: gulu-0908@0.0.3
+6 info lifecycle gulu-0908@0.0.3~test: gulu-0908@0.0.3
+7 verbose lifecycle gulu-0908@0.0.3~test: unsafe-perm in lifecycle true
+8 verbose lifecycle gulu-0908@0.0.3~test: PATH: C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;D:\gulu-demo\node_modules\.bin;C:\Users\17790\local;C:\Users\17790\bin;D:\Git\mingw64\bin;D:\Git\usr\local\bin;D:\Git\usr\bin;D:\Git\usr\bin;D:\Git\mingw64\bin;D:\Git\usr\bin;C:\Users\17790\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;E:\Microsoft VS Code\bin;D:\Git\cmd;D:\Git\mingw64\bin;D:\Git\usr\bin;C:\Program Files (x86)\Yarn\bin;C:\Users\17790\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\bin;C:\Users\17790\AppData\Roaming\npm;C:\Users\17790\AppData\Local\Yarn\bin;D:\Git\usr\bin\vendor_perl;D:\Git\usr\bin\core_perl
+9 verbose lifecycle gulu-0908@0.0.3~test: CWD: D:\gulu-demo
+10 silly lifecycle gulu-0908@0.0.3~test: Args: [ '/d /s /c',
+10 silly lifecycle   'parcel build test/* --no-cache --no-minify && karma start --single-run' ]
+11 silly lifecycle gulu-0908@0.0.3~test: Returned: code: 1  signal: null
+12 info lifecycle gulu-0908@0.0.3~test: Failed to exec test script
+13 verbose stack Error: gulu-0908@0.0.3 test: `parcel build test/* --no-cache --no-minify && karma start --single-run`
+13 verbose stack Exit status 1
+13 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\index.js:285:16)
+13 verbose stack     at emitTwo (events.js:126:13)
+13 verbose stack     at EventEmitter.emit (events.js:214:7)
+13 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\lib\spawn.js:55:14)
+13 verbose stack     at emitTwo (events.js:126:13)
+13 verbose stack     at ChildProcess.emit (events.js:214:7)
+13 verbose stack     at maybeClose (internal/child_process.js:925:16)
+13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+14 verbose pkgid gulu-0908@0.0.3
+15 verbose cwd D:\gulu-demo
+16 verbose Windows_NT 10.0.17134
+17 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "test" "--no-cache"
+18 verbose node v8.9.4
+19 verbose npm  v5.6.0
+20 error code ELIFECYCLE
+21 error errno 1
+22 error gulu-0908@0.0.3 test: `parcel build test/* --no-cache --no-minify && karma start --single-run`
+22 error Exit status 1
+23 error Failed at the gulu-0908@0.0.3 test script.
+23 error This is probably not a problem with npm. There is likely additional logging output above.
+24 verbose exit [ 1, true ]

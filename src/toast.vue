@@ -69,6 +69,7 @@
             },
             close() {
                 this.$el.remove()
+                this.$emit('close')
                 this.$destroy()
             },
             onClickClose() {
@@ -86,11 +87,15 @@
     $font-size: 14px;
     $toast-min-height: 40px;
     $toast-bg: rgba(0, 0, 0, 0.75);
+    @keyframes fade-in{
+        0%{opacity: 0;transform:translateY(100%)}
+        100%{opacity: 1;transform:translateY(0%)}
+    }
     .toast {position: fixed;left: 50%;
         font-size: $font-size;line-height: 1.8;min-height: $toast-min-height;display: flex;
         justify-content: center;align-items: center;background: $toast-bg;
         box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.50);border-radius: 4px;color: white;
-        padding: 0 16px;
+        padding: 0 16px;animation: fade-in .5s linear;
         &.position-top{
             top: 0;
             transform: translateX(-50%);
