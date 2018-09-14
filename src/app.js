@@ -43,15 +43,15 @@ new Vue({
         showToast() {
             this.$toast('<p><strong>我是<a href="http://www.baidu.com" target="_blank">百度</a></strong></p>',
                 {
-                enableHtml:true,
-                position:'middle'
-            //     closeButton:{
-            //         text:'知道了',
-            //         callback(){
-            //             console.log('用户说他知道了')
-            //         }
-            //     }
-             })
+                    enableHtml:true,
+                    position:'middle'
+                    //     closeButton:{
+                    //         text:'知道了',
+                    //         callback(){
+                    //             console.log('用户说他知道了')
+                    //         }
+                    //     }
+                })
         },
 
     },
