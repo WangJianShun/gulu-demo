@@ -28,41 +28,43 @@ describe('Toast', () => {
 
         })
         it('接受CloseButton', () => {
-        const Constructor = Vue.extend(Toast)
-        let callback=sinon.fake();
-        const vm = new Constructor({
-            propsData: {
-                closeButton:{
-                    text:'点击关闭',
-                    callback,
+            const Constructor = Vue.extend(Toast)
+            let callback = sinon.fake();
+            const vm = new Constructor({
+                propsData: {
+                    closeButton: {
+                        text: '点击关闭',
+                        callback,
+                    }
                 }
-            }
-        }).$mount()
-        let closeButton=vm.$el.querySelector('.close')
-        expect(closeButton.textContent.trim()).to.eq('点击关闭')
-        closeButton.click()
-        expect (callback).to.have.been.called
-    })
+            }).$mount()
+            let closeButton = vm.$el.querySelector('.close')
+            expect(closeButton.textContent.trim()).to.eq('点击关闭')
+            setTimeout(() => {
+                closeButton.click()
+                expect(callback).to.have.been.called
+            }, 200)
+        })
         it('接受enableHtml', () => {
             const Constructor = Vue.extend(Toast)
             const vm = new Constructor({
                 propsData: {
-                   enableHtml:true
+                    enableHtml: true
                 }
             })
-            vm.$slots.default=['<strong id="xss">hello</strong>']
-                vm.$mount()
-            let strong=vm.$el.querySelector('#xss')
+            vm.$slots.default = ['<strong id="xss">hello</strong>']
+            vm.$mount()
+            let strong = vm.$el.querySelector('#xss')
             expect(strong).to.exist
         })
         it('接受position', () => {
             const Constructor = Vue.extend(Toast)
             const vm = new Constructor({
                 propsData: {
-                    position:'middle',
+                    position: 'middle',
                 }
             }).$mount()
             expect(vm.$el.classList.contains('position-middle')).to.eq(true)
         })
-})
+    })
 })
