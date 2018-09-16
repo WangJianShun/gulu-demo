@@ -22,7 +22,7 @@
     .tabs-head {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+
         border: 1px solid red;
         height: $height;
         > .actions {
