@@ -42,38 +42,17 @@ Vue.use(plugin)
 new Vue({
     el: '#app',
     data: {
-        selectedTab:'sport'
+        selectedTab: 'sports'
     },
     created() {
 
     },
     methods: {
-        showToast1() {
-            this.showToast('top')
+        yyy(data) {
+            console.log(data)
         },
-        showToast2() {
-            this.showToast('middle')
-        },
-        showToast3() {
-            this.showToast('bottom')
-        },
-
-        showToast(position) {
-            this.$toast('<p><strong>我是<a href="http://www.baidu.com" target="_blank">百度</a></strong></p>',
-                {
-                    enableHtml: true,
-                    position,
-                    closeButton: {
-                        text: '知道了',
-                        callback() {
-                            console.log('用户说他知道了')
-                        }
-                    },
-                    autoClose:3
-                })
-        },
-
     },
+
 
 })
 
