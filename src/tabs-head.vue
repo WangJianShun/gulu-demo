@@ -29,8 +29,8 @@
         display: flex;
         justify-content: flex-start;
         position: relative;
-
         height: $height;
+        border-bottom:1px solid #ddd;
         > .line {
             position: absolute;
             bottom: 0;
@@ -39,6 +39,8 @@
         }
         > .actions {
             margin-left: auto;
+            display:inline-flex;
+            align-items: center;
         }
     }
 </style>
