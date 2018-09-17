@@ -13,9 +13,8 @@
                 active: false,
             }
         },
-        computed:{
-            classes()
-            {
+        computed: {
+            classes() {
                 return {active: this.active}
             }
         },
@@ -40,15 +39,18 @@
 </script>
 
 <style lang="scss" scoped>
+    $color: white;
     .tabs-item {
         flex-shrink: 0;
         padding: 0 2em;
         cursor: pointer;
-        height:100%;
+        height: 100%;
         display: flex;
         align-items: center;
-        &.active{
+        &.active {
+            color: $color;
             background: blue;
+            font-weight:bold;
         }
     }
 </style>
