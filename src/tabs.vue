@@ -44,7 +44,6 @@
                 if (vm.$options.name === 'GuluHead') {
                     vm.$children.forEach((childrenVm) => {
                         if (childrenVm.$options.name === 'GuluItem' && childrenVm.name === this.selected) {
-                            console.log(childrenVm.$el)
                             this.eventBus.$emit(':update:selected', this.selected,childrenVm)
                         }
                     })

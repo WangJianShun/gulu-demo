@@ -12,10 +12,11 @@
     export default {
         name: "GuluHead",
         inject: ['eventBus'],
-        created() {
-            this.eventBus.$on(':update:selected',(item,vm)=>{
-                console.log(item)
-                console.log(vm.name)
+        mounted() {
+            this.eventBus.$on(':update:selected', (item, vm) => {
+                let {width, height, top, left} = vm.$el.getBoundingClientRect()
+                this.$refs.line.style.width=`${width}px`
+                this.$refs.line.style.left=`${left}px`
             })
         },
     }
@@ -28,13 +29,13 @@
         display: flex;
         justify-content: flex-start;
         position: relative;
-        border: 1px solid red;
+
         height: $height;
-        > .line{
-            position:absolute;
-            bottom:0;
-            border-bottom:3px solid green;
-            width:100%;
+        > .line {
+            position: absolute;
+            bottom: 0;
+            border-bottom: 1px solid green;
+            transition:all 250ms;
         }
         > .actions {
             margin-left: auto;
