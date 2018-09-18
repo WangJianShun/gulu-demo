@@ -1,7 +1,7 @@
 <template>
-    <div class="popover" @click="xxx">
-        <div class="content-wrapper" v-if="visible">
-            <slot name="content" ></slot>
+    <div class="popover" @click.stop="xxx">
+        <div class="content-wrapper" v-if="visible" @click.stop`>
+            <slot name="content"></slot>
         </div>
         <slot></slot>
     </div>
@@ -17,6 +17,17 @@
         methods: {
             xxx() {
                 this.visible = !this.visible
+                if (this.visible === true) {
+                    this.$nextTick(() => {
+                        let eventHandler = () => {
+                            this.visible = false
+                            document.removeEventListener('click', eventHandler)
+                            console.log('切换了popover');
+                        }
+                        document.addEventListener('click', eventHandler)
+                    })
+
+                }
             }
         }
     }
@@ -25,15 +36,15 @@
     .popover {
         display: inline-block;
         vertical-align: top;
-        position:relative;
-        top:100px;
-        left:100px;
-        .content-wrapper{
-            position:absolute;
-            bottom:100%;
-            left:0;
-            border:1px solid red;
-            box-shadow: 0 0 3px rgba(0,0,0,0.5);
+        position: relative;
+        top: 100px;
+        left: 100px;
+        .content-wrapper {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            border: 1px solid red;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
         }
     }
 </style>
