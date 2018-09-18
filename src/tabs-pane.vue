@@ -43,6 +43,7 @@
     .tabs-pane {
         &.active {
             padding : 1em;
+            color:blue;
         }
     }
 </style>

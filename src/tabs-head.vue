@@ -39,7 +39,7 @@
         }
         > .actions {
             margin-left: auto;
-            display:inline-flex;
+            display:flex;
             align-items: center;
         }
     }
