@@ -65,11 +65,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="3385" />
+          <entry key="HTML" value="3442" />
           <entry key="JSON" value="79" />
           <entry key="JavaScript" value="8248" />
-          <entry key="PLAIN_TEXT" value="1849" />
-          <entry key="Vue.js" value="15284" />
+          <entry key="PLAIN_TEXT" value="1871" />
+          <entry key="Vue.js" value="16196" />
           <entry key="YAML" value="178" />
         </counts>
       </usages-collector>
@@ -77,12 +77,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="28" />
-          <entry key="html" value="3381" />
+          <entry key="html" value="3438" />
           <entry key="js" value="8252" />
           <entry key="json" value="79" />
           <entry key="md" value="425" />
-          <entry key="txt" value="1375" />
-          <entry key="vue" value="15305" />
+          <entry key="txt" value="1397" />
+          <entry key="vue" value="16217" />
           <entry key="yml" value="178" />
         </counts>
       </usages-collector>
@@ -97,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="61" column="113" selection-start-line="61" selection-start-column="113" selection-end-line="61" selection-end-column="113" />
+            <state relative-caret-position="601">
+              <caret line="83" column="30" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -106,8 +106,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/popover.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+            <state relative-caret-position="-1083">
+              <caret line="119" selection-start-line="119" selection-end-line="119" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
@@ -118,7 +118,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="567">
               <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
@@ -221,10 +221,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="271" />
-    <option name="y" value="220" />
+    <option name="x" value="421" />
+    <option name="y" value="155" />
     <option name="width" value="1380" />
-    <option name="height" value="756" />
+    <option name="height" value="751" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -319,21 +319,7 @@
       <workItem from="1537155975887" duration="16964000" />
       <workItem from="1537194614959" duration="5245000" />
       <workItem from="1537244635829" duration="32647000" />
-      <workItem from="1537356760674" duration="5814000" />
-    </task>
-    <task id="LOCAL-00015" summary="安装Chai">
-      <created>1536313148136</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1536313148136</updated>
-    </task>
-    <task id="LOCAL-00016" summary="使用chai.expect 添加四个测试用例,第五个不会">
-      <created>1536329594885</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1536329594885</updated>
+      <workItem from="1537356760674" duration="14520000" />
     </task>
     <task id="LOCAL-00017" summary="使用chai-spies 监听回调函数">
       <created>1536331518202</created>
@@ -664,7 +650,21 @@
       <option name="project" value="LOCAL" />
       <updated>1537350140367</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="解决点击内容关闭的bug">
+      <created>1537363169534</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1537363169535</updated>
+    </task>
+    <task id="LOCAL-00065" summary="添加默认样式">
+      <created>1537364606984</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1537364606984</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -673,10 +673,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="324399000" />
+    <option name="totallyTimeSpent" value="333105000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="738" y="180" width="1380" height="756" extended-state="0" />
+    <frame x="799" y="210" width="1380" height="751" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.50087875" side_tool="true" weight="0.1728763" />
@@ -688,7 +688,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.48956782" visible="true" weight="0.20100503" />
+      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.48956782" visible="true" weight="0.2027027" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32965517" />
@@ -733,8 +733,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="完成col的测试用例" />
-    <MESSAGE value="创建content footer sider layout组件" />
     <MESSAGE value="创建content footer sider layout header组件" />
     <MESSAGE value="默认布局基本功能完成" />
     <MESSAGE value="添加简单动画" />
@@ -758,7 +756,9 @@
     <MESSAGE value="解决有overflow:hidden;造成的BUG" />
     <MESSAGE value="监听 popover 的点击事件" />
     <MESSAGE value="简单重构一下代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="简单重构一下代码" />
+    <MESSAGE value="解决点击内容关闭的bug" />
+    <MESSAGE value="添加默认样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加默认样式" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/button.js" />
@@ -1031,7 +1031,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="567">
           <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
@@ -1041,15 +1041,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="61" column="113" selection-start-line="61" selection-start-column="113" selection-end-line="61" selection-end-column="113" />
+        <state relative-caret-position="601">
+          <caret line="83" column="30" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/popover.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+        <state relative-caret-position="-1083">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
