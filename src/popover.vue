@@ -3,7 +3,7 @@
         <div ref="contentWrapper" class="content-wrapper" v-if="visible">
             <slot name="content"></slot>
         </div>
-        <span ref="triggerWrapper">
+        <span ref="triggerWrapper" style="display:inline-block;">
         <slot></slot>
         </span>
     </div>
@@ -43,12 +43,11 @@
                     document.addEventListener('click', this.onClickDocument)
 
                 })
-            } ,
+            },
 
             close() {
                 this.visible = false;
                 document.removeEventListener('click', this.onClickDocument)
-                console.log('关闭')
             },
 
             onclick(event) {
@@ -66,18 +65,42 @@
 
 </script>
 <style lang="scss" scoped>
+    $border-color: #333;
+    $border-radius: 4px;
+    $top:100%;
     .popover {
         display: inline-block;
         vertical-align: top;
         position: relative;
-        top: 100px;
-        left: 100px;
+        left:100px;
+        top:100px;
     }
 
     .content-wrapper {
         position: absolute;
-        border: 1px solid red;
-        box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-        transform: translateY(-20px);
+        border: 1px solid $border-color;
+        filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.5));
+        background: white;
+        border-radius: $border-radius;
+        transform:translateY(-100%);
+        padding:.5em 1em;
+        margin-top:-10px;
+        max-width:20em;
+        word-break:break-all;
+        &::before,&::after{
+            content:'';
+            height:0px;
+            width:0px;
+            display: block;
+            position: absolute;
+            top:$top;
+            left:10px;
+            border: 10px solid transparent;border-top-color: black;
+        }
+        &::after{
+            top:99%;
+            border: 10px solid transparent;border-top-color: white;
+        }
     }
+
 </style>
