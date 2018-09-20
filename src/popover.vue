@@ -1,5 +1,5 @@
 <template>
-    <div class="popover" @click="onclick" ref="popover">
+    <div class="popover" ref="popover">
         <div ref="contentWrapper" class="content-wrapper" v-if="visible"
              :class="{[`position-${position}`]:true}">
             <slot name="content"></slot>
@@ -24,6 +24,35 @@
                 validator(value) {
                     return ['top', 'bottom', 'left', 'right'].indexOf(value) >= 0
                 }
+            },
+            trigger: {
+                type: String,
+                default: 'click',
+                validator(value) {
+                    return ['click', 'hover'].indexOf(value) >= 0
+
+
+                }
+            }
+        },
+        mounted() {
+            if (this.trigger === 'click') {
+                this.$refs.popover.addEventListener('click', this.onclick)
+
+            } else {
+                this.$refs.popover.addEventListener('mouseenter', this.open)
+                this.$refs.popover.addEventListener('mouseleave', this.close)
+
+            }
+        },
+        destroyed(){
+            if (this.trigger === 'click') {
+                this.$refs.popover.removeEventListener('click', this.onclick)
+
+            } else {
+                this.$refs.popover.removeEventListener('mouseenter', this.open)
+                this.$refs.popover.removeEventListener('mouseleave', this.close)
+
             }
         },
         methods: {
@@ -42,7 +71,7 @@
                         left: left + window.scrollX + 'px'
                     },
                     left: {
-                        top:top + window.scrollY + (height - height2) / 2 + 'px',
+                        top: top + window.scrollY + (height - height2) / 2 + 'px',
                         left: left + window.scrollX + 'px'
                     },
                     right: {
@@ -50,8 +79,8 @@
                         left: left + width + window.scrollX + 'px'
                     }
                 }
-                contentWrapper.style.left=positions[this.position].left
-                contentWrapper.style.top=positions[this.position].top
+                contentWrapper.style.left = positions[this.position].left
+                contentWrapper.style.top = positions[this.position].top
             },
 
             onClickDocument(e) {
