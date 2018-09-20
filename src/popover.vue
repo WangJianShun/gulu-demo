@@ -2,7 +2,7 @@
     <div class="popover" ref="popover">
         <div ref="contentWrapper" class="content-wrapper" v-if="visible"
              :class="{[`position-${position}`]:true}">
-            <slot name="content"></slot>
+            <slot name="content" :close="close"></slot>
         </div>
         <span ref="triggerWrapper" style="display:inline-block;">
         <slot></slot>
@@ -45,7 +45,7 @@
 
             }
         },
-        destroyed(){
+        destroyed() {
             if (this.trigger === 'click') {
                 this.$refs.popover.removeEventListener('click', this.onclick)
 
@@ -157,6 +157,7 @@
             &::before {
                 border: 10px solid transparent;border-top-color: black;
                 top: 100%;
+                border-bottom: none;
             }
             &::before, &::after {
                 left: 10px;
@@ -164,6 +165,7 @@
             &::after {
                 top: 99%;
                 border: 10px solid transparent;border-top-color: white;
+                border-bottom: none;
             }
         }
         &.position-bottom {
@@ -175,10 +177,13 @@
             &::before {
                 bottom: 100%;
                 border: 10px solid transparent;border-bottom-color: black;
+                border-top:none;
+
             }
             &::after {
                 bottom: 99%;
                 border: 10px solid transparent;border-bottom-color: white;
+                border-top:none;
             }
         }
         &.position-left {
@@ -188,15 +193,16 @@
                 border: 10px solid transparent;border-left-color: black;
                 top: 50%;
                 transform: translateY(-50%);
-            }
-            &::before {
                 left: 100%;
+                border-right:none;
             }
+
             &::after {
                 top: 50%;
                 left: 99.5%;
                 transform: translateY(-50%);
                 border: 10px solid transparent;border-left-color: white;
+                border-right:none;
             }
         }
         &.position-right {
@@ -205,15 +211,18 @@
                 border: 10px solid transparent;border-right-color: black;
                 top: 50%;
                 transform: translateY(-50%);
+                right: 100%;
+                border-left:none;
             }
             &::before {
-                right: 100%;
+
             }
             &::after {
                 top: 50%;
                 right: 99.5%;
                 transform: translateY(-50%);
                 border: 10px solid transparent;border-right-color: white;
+                border-left:none;
             }
         }
     }
