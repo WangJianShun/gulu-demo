@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75242d66-6e1b-49b7-b9f0-1872d56ace50" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/components/button.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/button.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+>>>>>>> origin/master
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -71,7 +79,11 @@
           <entry key="JSON" value="140" />
           <entry key="JavaScript" value="9123" />
           <entry key="Markdown" value="266" />
+<<<<<<< HEAD
           <entry key="PLAIN_TEXT" value="2184" />
+=======
+          <entry key="PLAIN_TEXT" value="2168" />
+>>>>>>> origin/master
           <entry key="Vue.js" value="19321" />
           <entry key="YAML" value="178" />
         </counts>
@@ -85,7 +97,11 @@
           <entry key="json" value="140" />
           <entry key="md" value="691" />
           <entry key="sh" value="26" />
+<<<<<<< HEAD
           <entry key="txt" value="1684" />
+=======
+          <entry key="txt" value="1668" />
+>>>>>>> origin/master
           <entry key="vue" value="19342" />
           <entry key="yml" value="178" />
         </counts>
@@ -158,8 +174,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deploy.sh">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="442">
               <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+=======
+            <state relative-caret-position="421">
+              <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+>>>>>>> origin/master
             </state>
           </provider>
         </entry>
@@ -301,10 +322,17 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="526" />
     <option name="y" value="120" />
     <option name="width" value="1380" />
     <option name="height" value="913" />
+=======
+    <option name="x" value="445" />
+    <option name="y" value="243" />
+    <option name="width" value="1380" />
+    <option name="height" value="850" />
+>>>>>>> origin/master
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -432,7 +460,18 @@
       <workItem from="1537356760674" duration="14669000" />
       <workItem from="1537416739166" duration="14181000" />
       <workItem from="1537441325084" duration="13962000" />
+<<<<<<< HEAD
       <workItem from="1537504895020" duration="19323000" />
+=======
+      <workItem from="1537504895020" duration="19056000" />
+    </task>
+    <task id="LOCAL-00030" summary="添加input的测试用例">
+      <created>1536512035497</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1536512035497</updated>
+>>>>>>> origin/master
     </task>
     <task id="LOCAL-00031" summary="input添加双向绑定">
       <created>1536557715875</created>
@@ -770,6 +809,7 @@
       <option name="project" value="LOCAL" />
       <updated>1537531742748</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00079" summary="部署到 github">
       <created>1537535629322</created>
       <option name="number" value="00079" />
@@ -778,6 +818,9 @@
       <updated>1537535629323</updated>
     </task>
     <option name="localTasksCounter" value="80" />
+=======
+    <option name="localTasksCounter" value="79" />
+>>>>>>> origin/master
     <servers />
   </component>
   <component name="TestHistory">
@@ -786,10 +829,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="380720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="526" y="120" width="1380" height="913" extended-state="0" />
+=======
+    <option name="totallyTimeSpent" value="380453000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="445" y="243" width="1380" height="850" extended-state="0" />
+>>>>>>> origin/master
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.50087875" side_tool="true" weight="0.1728763" />
@@ -801,7 +851,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.48956782" visible="true" weight="0.15649867" />
+=======
+      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.48956782" visible="true" weight="0.17076701" />
+>>>>>>> origin/master
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32965517" />
@@ -846,6 +900,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+<<<<<<< HEAD
+=======
+    <MESSAGE value="增大item可点击区域" />
+>>>>>>> origin/master
     <MESSAGE value="触发 :update:selected 事件的时候添加一个 item 数据" />
     <MESSAGE value="tab 切换动画 完成" />
     <MESSAGE value="完善 Tabs的样式" />
@@ -870,8 +928,12 @@
     <MESSAGE value="完成手风琴组件" />
     <MESSAGE value="button组件的css3变量 更改为scss变量" />
     <MESSAGE value="创建官网" />
+<<<<<<< HEAD
     <MESSAGE value="部署到 github" />
     <option name="LAST_COMMIT_MESSAGE" value="部署到 github" />
+=======
+    <option name="LAST_COMMIT_MESSAGE" value="创建官网" />
+>>>>>>> origin/master
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/dist/button.test.css">
@@ -1229,8 +1291,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deploy.sh">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="442">
           <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+=======
+        <state relative-caret-position="421">
+          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+>>>>>>> origin/master
         </state>
       </provider>
     </entry>
