@@ -20,6 +20,7 @@
 
     .sider {
         position: relative;
+        background: #f08d49 !important;
         > button {
             position: absolute;;
             top: 0;

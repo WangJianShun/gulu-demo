@@ -131,8 +131,6 @@
         display: inline-block;
         vertical-align: top;
         position: relative;
-        left: 200px;
-        top: 200px;
     }
 
     .content-wrapper {

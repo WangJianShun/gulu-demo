@@ -86,8 +86,6 @@
 <style scoped lang="scss">
     .col {
         width: 50%;
-        border: 1px solid green;
-        height: 100px;
 
         @for $n from 1 through 24 {
             $class: col-;

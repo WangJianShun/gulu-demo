@@ -110,7 +110,9 @@
         position: fixed;left: 50%; transform: translateX(-50%);
         &.position-top {
             top: 0;
+            z-index:30;
             .toast {
+
                 border-top-left-radius: 0px;
                 border-top-right-radius: 0px;
                 animation: slide-down $animation-time linear;
@@ -118,6 +120,7 @@
         }
         &.position-bottom {
             bottom: 0;
+            z-index:30;
             .toast {
                 border-bottom-left-radius: 0px;
                 border-bottom-right-radius: 0px;
@@ -125,6 +128,7 @@
             }
         }
         &.position-middle {
+            z-index:30;
             top: 50%;
             transform: translate(-50%, -50%);
             .toast {
@@ -140,7 +144,7 @@
         padding: 0 16px;
     }
 
-    .close {padding-left: 16px;}
+    .close {padding-left: 16px;cursor: pointer; }
 
     .line {
         border-left: 1px solid #666;
