@@ -15,14 +15,15 @@
                 default: String,
                 required: true,
             },
-            name:{
-                type:true,
-                required:true,
+            name: {
+                type: true,
+                required: true,
             }
         },
         data() {
             return {
                 open: false,
+                single: false,
             }
         },
         inject: ['eventBus'],
@@ -30,23 +31,20 @@
             toggle() {
                 if (this.open) {
                     this.open = false
+                    this.eventBus && this.eventBus.$emit('update:removeSelected', this.name)
+
                 } else {
-                    this.eventBus && this.eventBus.$emit('update:selected', this.name)
+                    this.eventBus && this.eventBus.$emit('update:addSelected', this.name)
                 }
             },
-            close() {
-                this.open = false
-            },
-            show(){
-                this.open=true
-            }
+
         },
         mounted() {
-            this.eventBus && this.eventBus.$on('update:selected', (name) => {
-                if (name!== this.name) {
-                    this.close()
-                }else{
-                    this.show()
+            this.eventBus && this.eventBus.$on('update:selected', (names) => {
+                if (names.indexOf(this.name) >= 0) {
+                    this.open=true
+                } else {
+                        this.open=false
                 }
             })
         }
@@ -58,7 +56,7 @@
     $border-radius: 4px;
     .collapseItem {
         > .title {border: 1px solid $grey;margin-top: -1px;margin-left: -1px;margin-right: -1px;
-            min-height: 32px;display: flex;align-items: center;padding: 0 8px;}
+            min-height: 32px;display: flex;align-items: center;padding: 0 8px;cursor: pointer; }
 
         &:first-child {
             > .title {border-top-left-radius: $border-radius;
