@@ -4,9 +4,7 @@
         <g-button icon="settings">选项</g-button>
         <g-button loading>提交</g-button>
         <g-button disabled>撤销</g-button>
-        <pre>
-            <code>{{content}}</code>
-        </pre>
+        <pre><code>{{content}}</code></pre>
     </div>
 </template>
 
@@ -24,7 +22,7 @@
                   <g-button icon="settings">选项</g-button>
                   <g-button loading>提交</g-button>
                   <g-button disabled>撤销</g-button>
-                `
+                `.replace(/\t+| +/g,'').trim()
             }
         }
     }
