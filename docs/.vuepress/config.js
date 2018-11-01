@@ -7,8 +7,8 @@ module.exports = {
             {
               title:'入门' ,
                 children:[
+                    '/get-started/',
                     '/install/',
-                    '/get-started/'
                 ]
             },
 
@@ -16,7 +16,6 @@ module.exports = {
                 title: '组件',
                 children: [
                     '/components/button',
-                    '/components/tabs',
                     '/components/input',
                     '/components/toast',
                     '/components/popover',

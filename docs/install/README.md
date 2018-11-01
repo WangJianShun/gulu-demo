@@ -3,7 +3,7 @@ title:安装
 ---
 
 # 安装 
- 本章节待完善....
+ 
 
 ```js{3}
 npm install gulu-0908
